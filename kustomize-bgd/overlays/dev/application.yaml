@@ -15,10 +15,4 @@ spec:
     server: https://api.njzmp.okd.cz.o2:6443
     namespace: dev-bgd
 
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=false  #kdyz namespace neexistuje, tak ho argo vytvori (nechci, delam si sam namespace)
-
-    automated: 
-      selfHeal: false #Kdyz se manualne udela zmena v clusteru, Argo automaticky vrati konfiguraci zpatky podle Gitu 
-      prune: false    #automaticky mazani
+ 
