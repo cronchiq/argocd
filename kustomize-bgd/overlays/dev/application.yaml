@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1aplha1
+kind: Application
+metadata:
+  name: dev-bgd
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/cronchiq/argocd.git
+    targetRevision: main
+    path: kustomize-bgd/overlays/dev
+
+  destination:
+    server: https://api.njzmp.okd.cz.o2:6443
+    namespace: dev-bgd
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=false  #kdyz namespace neexistuje, tak ho argo vytvori (nechci, delam si sam namespace)
+
+    automated: 
+      selfHeal: false #Kdyz se manualne udela zmena v clusteru, Argo automaticky vrati konfiguraci zpatky podle Gitu 
+      prune: false    #nevim presne
