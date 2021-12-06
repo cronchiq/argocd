@@ -6,6 +6,7 @@ namespace: dev-bgd
 namePrefix: dev-
 
 commonLabels:
+  name: dev-bgd
   app: dev-bgd
 
 patches:
