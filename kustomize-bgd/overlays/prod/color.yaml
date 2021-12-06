@@ -9,7 +9,6 @@ spec:
           app: bgd
     spec:
       containers:
-      - name: bgd
-        env:
+      - env:
         - name: COLOR
           value: "green"
