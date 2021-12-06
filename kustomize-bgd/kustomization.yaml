@@ -3,3 +3,6 @@ resources:
   - namespace.yaml
   - route.yaml
   - svc.yaml
+
+  commonLabels:
+    owner: maca
