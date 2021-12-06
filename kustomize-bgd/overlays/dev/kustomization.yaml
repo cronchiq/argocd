@@ -7,6 +7,5 @@ namePrefix: dev-
 
 commonLabels:
   name: dev-bgd
-  labels:
-    app: dev-bgd
+  app: dev-bgd
 
