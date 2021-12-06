@@ -2,6 +2,3 @@ bases:
   - ../../base
 
 namePrefix: dev-
-
-commonLabels:
-  namespace: dev-bgd
