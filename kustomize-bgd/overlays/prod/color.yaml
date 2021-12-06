@@ -18,6 +18,9 @@ spec:
         app: bgd
     spec:
       containers:
+      - image: quay.io/redhatworkshops/bgd:latest
+        name: bgd
         env:
         - name: COLOR
-          value: "green"
+          value: "blue"
+        resources: {}
