@@ -2,20 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
-  labels:
-    app: bgd
   name: bgd
 spec:
   template:
     metadata:
       creationTimestamp: null
-      labels:
-        app: bgd
     spec:
-      containers:
-      - image: quay.io/redhatworkshops/bgd:latest
-        name: bgd
-        env:
         - name: COLOR
           value: "green"
-        resources: {}
