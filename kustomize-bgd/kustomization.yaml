@@ -4,5 +4,5 @@ resources:
   - route.yaml
   - svc.yaml
 
-  commonLabels:
-    owner: maca
+commonLabels:
+  owner: maca
