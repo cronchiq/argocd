@@ -6,6 +6,11 @@ metadata:
     app: bgd
   name: bgd
 spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: bgd
     spec:
       containers:
       - image: quay.io/redhatworkshops/bgd:latest
