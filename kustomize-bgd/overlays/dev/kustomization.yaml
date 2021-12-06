@@ -1,4 +1,10 @@
 bases:
   - ../../base
 
+namespace: dev-bgd
+
 namePrefix: dev-
+
+
+patches:
+  - namespace.yaml

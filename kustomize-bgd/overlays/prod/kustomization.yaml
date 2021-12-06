@@ -1,4 +1,9 @@
 bases:
   - ../../base
 
+namespace: prod-bgd
+
 namePrefix: prod-
+
+patches:
+  - namespace.yaml
