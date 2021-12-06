@@ -9,9 +9,5 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhatworkshops/bgd:latest
-        name: bgd
-        env:
         - name: COLOR
           value: "green"
-        resources: {}
