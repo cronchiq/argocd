@@ -5,5 +5,4 @@ resources:
   - svc.yaml
 
 commonLabels:
-  owner: maca
-  test: ano
+  owner: o2
