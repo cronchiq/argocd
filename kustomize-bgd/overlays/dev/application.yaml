@@ -21,4 +21,4 @@ spec:
 
     automated: 
       selfHeal: false #Kdyz se manualne udela zmena v clusteru, Argo automaticky vrati konfiguraci zpatky podle Gitu 
-      prune: false    #nevim presne
+      prune: false    #automaticky mazani
