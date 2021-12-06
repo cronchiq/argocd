@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bgd
+spec:
+    spec:
+        - name: COLOR
+          value: "green"
+

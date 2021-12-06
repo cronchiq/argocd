@@ -10,3 +10,4 @@ commonLabels:
 
 patches:
   - prod-route.yaml
+  - color.yaml
