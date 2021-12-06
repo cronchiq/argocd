@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bgd
+spec:
+  template:
+    metadata:
+      labels:
+          app: bgd
+    spec:
+      containers:
+      - name: bgd
+        env:
+        - name: COLOR
+          value: "yellow"
