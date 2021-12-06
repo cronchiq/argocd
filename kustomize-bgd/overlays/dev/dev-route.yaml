@@ -1,5 +1,9 @@
 apiVersion: route.openshift.io/v1
 kind: Route
+metadata:
+  creationTimestamp: null
+  name: bgd
+  namespace: bgd
 spec:
   host: "dev-bgd.apps.njzmp.okd.cz.o2"
   port:
