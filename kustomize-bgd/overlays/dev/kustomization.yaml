@@ -11,4 +11,5 @@ commonLabels:
 
 patches:
   - dev-route.yaml
+  - color.yaml
 
