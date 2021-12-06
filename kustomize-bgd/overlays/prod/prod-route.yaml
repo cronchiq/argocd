@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  name: bgd
+  namespace: bgd
+spec:
+  host: "prod-bgd.apps.njzmp.okd.cz.o2"
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: prod-bgd

@@ -8,3 +8,5 @@ namePrefix: prod-
 commonLabels:
   name: prod-bgd
 
+patches:
+  - prod-route.yaml
