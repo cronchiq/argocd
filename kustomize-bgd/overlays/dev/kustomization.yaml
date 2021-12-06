@@ -9,3 +9,6 @@ commonLabels:
   name: dev-bgd
   app: dev-bgd
 
+patches:
+  - dev-route.yaml
+

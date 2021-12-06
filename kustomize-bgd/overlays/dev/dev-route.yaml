@@ -1,0 +1,9 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+spec:
+  host: "dev-bgd.apps.njzmp.okd.cz.o2"
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: dev-bgd
