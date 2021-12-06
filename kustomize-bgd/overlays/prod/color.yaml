@@ -1,12 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   name: bgd
 spec:
   template:
     metadata:
-      creationTimestamp: null
     spec:
       containers:
       - image: quay.io/redhatworkshops/bgd:latest
