@@ -5,6 +5,6 @@ namespace: dev-bgd
 
 namePrefix: dev-
 
+commonLabels:
+  name: dev-bgd
 
-patches:
-  - namespace.yaml
