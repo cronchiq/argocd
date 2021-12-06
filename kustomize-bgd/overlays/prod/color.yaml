@@ -9,5 +9,6 @@ spec:
       creationTimestamp: null
     spec:
       containers:
+        env:
         - name: COLOR
           value: "green"
