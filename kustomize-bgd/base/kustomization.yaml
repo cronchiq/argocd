@@ -6,3 +6,4 @@ resources:
 
 commonLabels:
   owner: maca
+  test: true
