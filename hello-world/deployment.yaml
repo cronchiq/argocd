@@ -18,4 +18,4 @@ spec:
       - name: hello-world
         image: quay.io/openshifttest/hello-openshift:openshift
         ports:
-        - containerPort: 8080
+        - containerPort: 80
