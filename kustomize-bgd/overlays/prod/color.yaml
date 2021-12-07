@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: bgd
 spec:
-  replicas: 2
   template:
     metadata:
       labels:
