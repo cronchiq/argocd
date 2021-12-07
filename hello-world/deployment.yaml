@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: debian-deployment
+  name: hello-world 
   labels:
-    app: debian
+    app: helloWorld
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: debian
+      app: helloWorld
   template:
     metadata:
       labels:
-        app: debian
+        app: helloWorld
     spec:
       containers:
-      - name: debian
-        image: debian:bullseye-slim
+      - name: helloWorld
+        image: quay.io/openshifttest/hello-openshift
         ports:
         - containerPort: 8080
