@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: debian-deployment
   labels:
-    app: nginx
+    app: debian
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: debian
   template:
     metadata:
       labels:
-        app: nginx
+        app: debian
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: debian
+        image: debian:bullseye-slim
         ports:
-        - containerPort: 80
+        - containerPort: 8080
